@@ -121,3 +121,65 @@ button:hover {
   }
 
 }
+
+header {
+  position: fixed;
+
+  width: 100%;
+
+  top: 0;
+
+  left: 0;
+
+  padding: 20px 40px;
+
+  background: #0f172a;
+
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.logo {
+  color: #22c55e;
+
+  font-size: 28px;
+}
+
+.menu {
+  display: flex;
+
+  gap: 20px;
+
+  list-style: none;
+}
+
+.menu a {
+  color: white;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #22c55e;
+}
+
+footer {
+  background: #020617;
+
+  text-align: center;
+
+  padding: 30px 20px;
+
+  color: #94a3b8;
+
+  margin-top: 50px;
+}
