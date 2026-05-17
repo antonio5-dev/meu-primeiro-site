@@ -114,7 +114,7 @@ button:hover {
 .card h3 {
   margin-bottom: 15px;
 
-  color: #12b64e;
+  color: #45a6db;
 }
 
 @media (max-width: 768px) {
@@ -177,7 +177,7 @@ header {
 }
 
 .logo {
-  color: #22c55e;
+  color: #45a6db;
 
   font-size: 28px;
 }
@@ -199,7 +199,7 @@ header {
 }
 
 .menu a:hover {
-  color: #22c55e;
+  color: #45a6db;
 }
 
 footer {
@@ -235,7 +235,7 @@ footer {
 
   margin-bottom: 20px;
 
-  color: #22c55e;
+  color: #45a6db;
 }
 
 .about p {
@@ -307,7 +307,7 @@ img {
 }
 
 .testimonial h3 {
-  color: #22c55e;
+  color: #45a6db;
 }
 
 /* CHATBOT */
