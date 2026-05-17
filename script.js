@@ -22,7 +22,7 @@ sendChat.addEventListener("click", () => {
         return;
     }
 
-    // cria mensagem do usuário
+    // mensagem do usuário
     const novaMensagem = document.createElement("div");
 
     novaMensagem.textContent = mensagem;
@@ -40,23 +40,60 @@ sendChat.addEventListener("click", () => {
     // limpa input
     chatInput.value = "";
 
-// resposta automática
+    // resposta automática fake
+    setTimeout(() => {
 
-setTimeout(() => {
+        const respostaBot = document.createElement("div");
 
-    const respostaBot = document.createElement("div");
+        let resposta = "";
 
-    respostaBot.textContent =
-        "Olá! Obrigado pelo contato 😄 Em breve responderemos você.";
+if (
+    mensagem.toLowerCase().includes("site") ||
+    mensagem.toLowerCase().includes("sites")
+) {
 
-    respostaBot.style.background = "white";
-    respostaBot.style.padding = "10px";
-    respostaBot.style.marginBottom = "10px";
-    respostaBot.style.borderRadius = "10px";
-    respostaBot.style.width = "fit-content";
+    resposta =
+    "Criamos sites modernos, rápidos e responsivos para empresas e profissionais que querem atrair mais clientes 😄";
 
-    chatMessages.appendChild(respostaBot);
+}
 
-}, 500);
+else if (
+    mensagem.toLowerCase().includes("chatbot") ||
+    mensagem.toLowerCase().includes("ia")
+) {
+
+    resposta =
+    "Também desenvolvemos chatbots integrados ao site para atendimento automático e geração de clientes 🤖";
+
+}
+
+else if (
+    mensagem.toLowerCase().includes("suporte") ||
+    mensagem.toLowerCase().includes("manutenção")
+) {
+
+    resposta =
+    "Oferecemos suporte, manutenção e atualizações contínuas para manter seu site sempre funcionando 🚀";
+
+}
+
+else {
+
+    resposta =
+    "Olá 😄 Podemos ajudar com sites profissionais, chatbots com IA e suporte técnico.";
+
+}
+
+respostaBot.textContent = resposta;
+
+        respostaBot.style.background = "white";
+        respostaBot.style.padding = "10px";
+        respostaBot.style.marginBottom = "10px";
+        respostaBot.style.borderRadius = "10px";
+        respostaBot.style.width = "fit-content";
+
+        chatMessages.appendChild(respostaBot);
+
+    }, 500);
 
 });
